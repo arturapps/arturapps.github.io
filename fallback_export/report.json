@@ -1,0 +1,54 @@
+{
+  "generatedAt": "2026-07-29",
+  "documents": [
+    {
+      "id": "law-minimum-wage",
+      "title": "Об установлении и порядке повышения минимальной заработной платы",
+      "requisites": "17 июля 2002 г. № 124-З",
+      "editionLabel": "Редакция с изменениями Закона от 8 июля 2024 г. № 25-З; действует с 1 января 2025 г.",
+      "officialUrl": "https://pravo.by/document/?guid=3871&p0=H10200124",
+      "sourceUrl": "https://zakony-by.com/zakon_rb_ob_ustanovlenii_i_poryadke_povysheniya_razmera_minimalnoj_zarplaty",
+      "fetchedAt": "2026-07-29",
+      "contentLength": 17625,
+      "normCount": 9,
+      "checksum": "2abf74b5ba49452ced22a7877bde28f0047a83bbab16e5b4691e32e80f75e9ab",
+      "notes": "Публичная постатейная копия; реквизиты и редакция сверены отдельно по официальной карточке."
+    },
+    {
+      "id": "law-external-labor-migration",
+      "title": "О внешней трудовой миграции",
+      "requisites": "30 декабря 2010 г. № 225-З",
+      "editionLabel": "Редакция с изменениями Закона от 16 марта 2026 г. № 134-З; действует с 21 марта 2026 г.",
+      "officialUrl": "https://pravo.by/document/?guid=3871&p0=H11000225",
+      "sourceUrl": "https://zakony-by.com/zakon_rb_o_vneshnej_trudovoj_migratsii",
+      "fetchedAt": "2026-07-29",
+      "contentLength": 118260,
+      "normCount": 40,
+      "checksum": "b779b52094b512c0e4ab6d886c17d0261aa308eba184b71c93785c53e783d119",
+      "notes": "Публичная постатейная копия; реквизиты и редакция сверены отдельно по официальной карточке."
+    },
+    {
+      "id": "ukaz-45-2026",
+      "title": "Об обеспечении выплаты заработной платы и вознаграждений",
+      "requisites": "12 февраля 2026 г. № 45",
+      "editionLabel": "Действующая редакция; основные положения действуют с 15 мая 2026 г.",
+      "officialUrl": "https://pravo.by/document/?guid=3871&p0=P32600045",
+      "sourceUrl": "https://prg.kz/m/amp/document/33949727/",
+      "fetchedAt": "2026-07-29",
+      "contentLength": 6289,
+      "normCount": 2,
+      "checksum": "efdb8ad75b4d5750d75fe2d89e0cc16ac9334a686d45073470e7fa4870f27894",
+      "notes": "Текст получен из публичной копии; реквизиты и вступление в силу сверены по официальной карточке."
+    }
+  ],
+  "errors": [
+    {
+      "task": "average47",
+      "error": "RuntimeError('incomplete resolution-average-earnings-47: 2936')"
+    },
+    {
+      "task": "books40",
+      "error": "RuntimeError('incomplete resolution-labor-books-40: 11648')"
+    }
+  ]
+}
