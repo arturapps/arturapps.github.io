@@ -1,0 +1,59 @@
+{
+  "id": "law-external-labor-migration",
+  "regnum": "H11000225",
+  "title": "О внешней трудовой миграции",
+  "header": "ЗАКОН РЕСПУБЛИКИ БЕЛАРУСЬ 30 декабря 2010 г. №225-З О внешней трудовой миграции",
+  "docDate": "2010-12-30",
+  "docNumber": "225-З",
+  "sourceUrl": "https://etalonline.by/document/?regnum=H11000225",
+  "officialUrl": "https://pravo.by/document/?guid=3871&p0=H11000225",
+  "fetchedAt": "2026-07-29",
+  "status": "active_or_unknown",
+  "parseStatus": "parsed",
+  "contentText": "ЗАКОН РЕСПУБЛИКИ БЕЛАРУСЬ\n\n30 декабря 2010 г. № 225-З\n\nО внешней трудовой миграции\n\nПринят Палатой представителей 2 декабря 2010 года Одобрен Советом Республики 10 декабря 2010 года\n\nИзменения и дополнения:\n\nТекст документа доступен только пользователям ЭТАЛОН-ONLINE",
+  "structure": [
+    {
+      "id": "title-закон-республики-беларусь",
+      "kind": "title",
+      "text": "ЗАКОН РЕСПУБЛИКИ БЕЛАРУСЬ",
+      "level": 1
+    },
+    {
+      "id": "par-2",
+      "kind": "paragraph",
+      "text": "30 декабря 2010 г. № 225-З",
+      "level": 3
+    },
+    {
+      "id": "title-о-внешней-трудовой-миграции",
+      "kind": "title",
+      "text": "О внешней трудовой миграции",
+      "level": 1
+    },
+    {
+      "id": "par-4",
+      "kind": "paragraph",
+      "text": "Принят Палатой представителей 2 декабря 2010 года Одобрен Советом Республики 10 декабря 2010 года",
+      "level": 3
+    },
+    {
+      "id": "par-5",
+      "kind": "paragraph",
+      "text": "Изменения и дополнения:",
+      "level": 3
+    },
+    {
+      "id": "par-6",
+      "kind": "paragraph",
+      "text": "Текст документа доступен только пользователям ЭТАЛОН-ONLINE",
+      "level": 3
+    }
+  ],
+  "contentLength": 267,
+  "nodeCount": 6,
+  "articleCount": 0,
+  "pointCount": 0,
+  "likelyFull": true,
+  "checksum": "7fbce0c3bebb2e232007c773146dbaac9eca95f2c29862849c5d9b4bd73a0bd8",
+  "editionMarkers": []
+}

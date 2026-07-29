@@ -1,0 +1,53 @@
+{
+  "id": "resolution-labor-books-40",
+  "regnum": "W21429094",
+  "title": "О трудовых книжках",
+  "header": "ПОСТАНОВЛЕНИЕ МИНИСТЕРСТВА ТРУДА И СОЦИАЛЬНОЙ ЗАЩИТЫ РЕСПУБЛИКИ БЕЛАРУСЬ 16 июня 2014 г. №40 О трудовых книжках",
+  "docDate": "2014-06-16",
+  "docNumber": "40",
+  "sourceUrl": "https://etalonline.by/document/?regnum=W21429094",
+  "officialUrl": "https://pravo.by/document/?guid=3871&p0=W21429094",
+  "fetchedAt": "2026-07-29",
+  "status": "active_or_unknown",
+  "parseStatus": "parsed",
+  "contentText": "ПОСТАНОВЛЕНИЕ МИНИСТЕРСТВА ТРУДА И СОЦИАЛЬНОЙ ЗАЩИТЫ РЕСПУБЛИКИ БЕЛАРУСЬ\n\n16 июня 2014 г. № 40\n\nО трудовых книжках\n\nИзменения и дополнения:\n\nТекст документа доступен только пользователям ЭТАЛОН-ONLINE",
+  "structure": [
+    {
+      "id": "title-постановление-министерства-труда-и-социальной-защиты-республики-беларусь",
+      "kind": "title",
+      "text": "ПОСТАНОВЛЕНИЕ МИНИСТЕРСТВА ТРУДА И СОЦИАЛЬНОЙ ЗАЩИТЫ РЕСПУБЛИКИ БЕЛАРУСЬ",
+      "level": 1
+    },
+    {
+      "id": "par-2",
+      "kind": "paragraph",
+      "text": "16 июня 2014 г. № 40",
+      "level": 3
+    },
+    {
+      "id": "title-о-трудовых-книжках",
+      "kind": "title",
+      "text": "О трудовых книжках",
+      "level": 1
+    },
+    {
+      "id": "par-4",
+      "kind": "paragraph",
+      "text": "Изменения и дополнения:",
+      "level": 3
+    },
+    {
+      "id": "par-5",
+      "kind": "paragraph",
+      "text": "Текст документа доступен только пользователям ЭТАЛОН-ONLINE",
+      "level": 3
+    }
+  ],
+  "contentLength": 200,
+  "nodeCount": 5,
+  "articleCount": 0,
+  "pointCount": 0,
+  "likelyFull": false,
+  "checksum": "24f763ba24b0e928c168bc4c8fd1a329daedff831d2547e7b4c6202a7058b422",
+  "editionMarkers": []
+}
