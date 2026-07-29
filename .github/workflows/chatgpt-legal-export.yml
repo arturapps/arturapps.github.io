@@ -24,27 +24,23 @@ jobs:
         with:
           ref: chatgpt-legal-export-20260729
       - uses: actions/setup-python@v5
-        if: github.event_name != 'pull_request'
         with:
           python-version: '3.12'
       - run: pip install requests beautifulsoup4 lxml
-        if: github.event_name != 'pull_request'
-      - run: python automation/export_legislation.py
-        if: github.event_name != 'pull_request' && !hashFiles('legal_export/EXPORT_DONE.txt')
       - run: python automation/fetch_public_fallbacks.py
-        if: github.event_name != 'pull_request'
       - name: Commit export
         if: github.event_name != 'pull_request'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add legal_export fallback_export
+          git add fallback_export
           git commit -m "Export current legal text fallbacks" || exit 0
           git push origin HEAD:chatgpt-legal-export-20260729
       - name: Verify existing exports
         run: |
           test -f legal_export/legislation_export.zip
           test -f corrected_export/corrected_acts.zip
+          test -f fallback_export/fallback_acts.zip
       - uses: actions/upload-artifact@v4
         with:
           name: legislation-export-20260729
@@ -56,7 +52,6 @@ jobs:
           path: corrected_export/corrected_acts.zip
           retention-days: 7
       - uses: actions/upload-artifact@v4
-        if: hashFiles('fallback_export/fallback_acts.zip') != ''
         with:
           name: fallback-acts-20260729
           path: fallback_export/fallback_acts.zip
