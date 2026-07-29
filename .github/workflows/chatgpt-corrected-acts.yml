@@ -1,0 +1,32 @@
+name: ChatGPT corrected acts
+on:
+  push:
+    branches: [chatgpt-legal-export-20260729]
+    paths:
+      - automation/fetch_corrected_acts.py
+      - .github/workflows/chatgpt-corrected-acts.yml
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: chatgpt-legal-export-20260729
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests beautifulsoup4 lxml
+      - run: python automation/fetch_corrected_acts.py
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add corrected_export
+          git commit -m "Export corrected official acts" || exit 0
+          git push origin HEAD:chatgpt-legal-export-20260729
+      - uses: actions/upload-artifact@v4
+        with:
+          name: corrected-acts-20260729
+          path: corrected_export/corrected_acts.zip
+          retention-days: 7
