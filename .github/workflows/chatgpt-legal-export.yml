@@ -38,10 +38,17 @@ jobs:
           git add legal_export
           git commit -m "Export official legislation texts 2026-07-29" || exit 0
           git push origin HEAD:chatgpt-legal-export-20260729
-      - name: Verify existing export
-        run: test -f legal_export/legislation_export.zip
+      - name: Verify existing exports
+        run: |
+          test -f legal_export/legislation_export.zip
+          test -f corrected_export/corrected_acts.zip
       - uses: actions/upload-artifact@v4
         with:
           name: legislation-export-20260729
           path: legal_export/legislation_export.zip
+          retention-days: 7
+      - uses: actions/upload-artifact@v4
+        with:
+          name: corrected-acts-20260729
+          path: corrected_export/corrected_acts.zip
           retention-days: 7
