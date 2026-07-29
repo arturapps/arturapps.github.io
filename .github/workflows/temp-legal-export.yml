@@ -1,0 +1,34 @@
+name: Temporary legislation export
+
+on:
+  push:
+    branches:
+      - temp/legal-export-2026-07-29
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: temp/legal-export-2026-07-29
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests beautifulsoup4
+      - run: python tools/export_belarus_labor_law.py
+      - name: Commit export
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add legal_export
+          if git diff --cached --quiet; then
+            echo "No export changes"
+          else
+            git commit -m "Export official Belarus legislation snapshot"
+            git push origin HEAD:temp/legal-export-2026-07-29
+          fi
