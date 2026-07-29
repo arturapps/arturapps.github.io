@@ -23,17 +23,23 @@ jobs:
         with:
           ref: chatgpt-legal-export-20260729
       - uses: actions/setup-python@v5
+        if: github.event_name != 'pull_request'
         with:
           python-version: '3.12'
       - run: pip install requests beautifulsoup4 lxml
+        if: github.event_name != 'pull_request'
       - run: python automation/export_legislation.py
+        if: github.event_name != 'pull_request'
       - name: Commit export
+        if: github.event_name != 'pull_request'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add legal_export
           git commit -m "Export official legislation texts 2026-07-29" || exit 0
           git push origin HEAD:chatgpt-legal-export-20260729
+      - name: Verify existing export
+        run: test -f legal_export/legislation_export.zip
       - uses: actions/upload-artifact@v4
         with:
           name: legislation-export-20260729
